@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		EF1A1A3223D113DA00574EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1A1A3523D113DA00574EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF1A1A3723D113DA00574EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1A1A3D23D1163600574EA3 /* RxProject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxProject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +49,6 @@
 				7B6D9EDE3D0368EE1D4CC2D3 /* Pods-RxProject.debug.xcconfig */,
 				414FF307EC40CA0AE994E12D /* Pods-RxProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -63,6 +63,7 @@
 		EF1A1A1D23D113D700574EA3 = {
 			isa = PBXGroup;
 			children = (
+				EF1A1A3D23D1163600574EA3 /* RxProject.playground */,
 				EF1A1A2823D113D700574EA3 /* RxProject */,
 				EF1A1A2723D113D700574EA3 /* Products */,
 				2FEC7A563BBDDD103962008C /* Pods */,
