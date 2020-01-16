@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1831896DAC6CAF79DD76ACE4 /* Pods_RxProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D8AEB56EF520EDB5B6817B9 /* Pods_RxProject.framework */; };
 		EF1A1A2A23D113D700574EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A1A2923D113D700574EA3 /* AppDelegate.swift */; };
 		EF1A1A2C23D113D700574EA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A1A2B23D113D700574EA3 /* SceneDelegate.swift */; };
 		EF1A1A2E23D113D700574EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A1A2D23D113D700574EA3 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		414FF307EC40CA0AE994E12D /* Pods-RxProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxProject.release.xcconfig"; path = "Target Support Files/Pods-RxProject/Pods-RxProject.release.xcconfig"; sourceTree = "<group>"; };
+		7B6D9EDE3D0368EE1D4CC2D3 /* Pods-RxProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxProject.debug.xcconfig"; path = "Target Support Files/Pods-RxProject/Pods-RxProject.debug.xcconfig"; sourceTree = "<group>"; };
+		8D8AEB56EF520EDB5B6817B9 /* Pods_RxProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1A1A2623D113D700574EA3 /* RxProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1A1A2923D113D700574EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF1A1A2B23D113D700574EA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1831896DAC6CAF79DD76ACE4 /* Pods_RxProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FEC7A563BBDDD103962008C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B6D9EDE3D0368EE1D4CC2D3 /* Pods-RxProject.debug.xcconfig */,
+				414FF307EC40CA0AE994E12D /* Pods-RxProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFB6C412B0877875D5683FD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D8AEB56EF520EDB5B6817B9 /* Pods_RxProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF1A1A1D23D113D700574EA3 = {
 			isa = PBXGroup;
 			children = (
 				EF1A1A2823D113D700574EA3 /* RxProject */,
 				EF1A1A2723D113D700574EA3 /* Products */,
+				2FEC7A563BBDDD103962008C /* Pods */,
+				AFB6C412B0877875D5683FD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF1A1A3A23D113DA00574EA3 /* Build configuration list for PBXNativeTarget "RxProject" */;
 			buildPhases = (
+				D35F6F294A43E19C21736E17 /* [CP] Check Pods Manifest.lock */,
 				EF1A1A2223D113D700574EA3 /* Sources */,
 				EF1A1A2323D113D700574EA3 /* Frameworks */,
 				EF1A1A2423D113D700574EA3 /* Resources */,
+				A603638AF1318B6988CC2CC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A603638AF1318B6988CC2CC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxProject/Pods-RxProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxProject/Pods-RxProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxProject/Pods-RxProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35F6F294A43E19C21736E17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF1A1A2223D113D700574EA3 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		EF1A1A3B23D113DA00574EA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B6D9EDE3D0368EE1D4CC2D3 /* Pods-RxProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		EF1A1A3C23D113DA00574EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414FF307EC40CA0AE994E12D /* Pods-RxProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
